@@ -1,0 +1,14 @@
+pileline {
+agent any
+stages {
+stage ("Build') {
+steps { sh 'npm install' }
+}
+stage ('test') {
+steps { sh 'npm test' }
+}
+stage ('Deploy') {
+steps { sh 'echo Deploying' }
+}
+}
+}
