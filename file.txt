@@ -2,13 +2,13 @@ pileline {
 agent any
 stages {
 stage ( 'Build') {
-steps { sh 'npm install' }
+steps { echo 'hello team' }
 }
 stage ('test') {
-steps { sh 'npm test' }
+steps { echo 'test' }
 }
 stage ('Deploy') {
-steps { sh 'echo Deploying' }
+steps {  echo 'Deploying' }
 }
 }
 }
